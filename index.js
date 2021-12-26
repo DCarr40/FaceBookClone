@@ -8,7 +8,7 @@ const morgan = require("morgan");
 dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL, { useNewURLParser: true }, () => {
-  console.log("Connected to MongoDB");
+  console.log("Connected to MongoDB!");
 });
 
 app.listen(8800, () => {
